@@ -1,3 +1,4 @@
+@use "sass:color";
 /**
 * @author Prenom Nom courriel
 * @todo Importer la fonte Futura
@@ -28,7 +29,7 @@ $vertLime: #bbd531;
 $bleuMinuit: #012d61;
 $bleuMarin: #2678B5;
 
-$bleuMoyenTransparent : transparentize($bleuMoyen, 0.50);
+$bleuMoyenTransparent : color.adjust($bleuMoyen, $alpha: -0.50);
 
 /* Autres couleurs */
 $hyperlien: $bleuMarin;

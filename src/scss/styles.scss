@@ -31,17 +31,17 @@
 /** LIBRAIRIES **/
 
 /* Normalize */
-//@import "../../../node_modules/normalize.scss/normalize.scss";
+// @use "../../node_modules/normalize.scss/normalize.scss";
 
 /** UTILITAIRES **/
-@import "utilitaires/variables";
-@import "utilitaires/mixins";
+@use "utilitaires/variables";
+@use "utilitaires/mixins";
 
 /** BASE **/
-@import "base/bouton";
-@import "base/hyperlien";
-@import "base/typo";
-@import "base/grille";
+@use "base/bouton";
+@use "base/hyperlien";
+@use "base/typo";
+@use "base/grille";
 
 /** MODULES **/
 
