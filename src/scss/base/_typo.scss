@@ -1,3 +1,6 @@
+@use "../utilitaires/mixins";
+@use "../utilitaires/variables";
+
 /**
 * @author Prenom Nom courriel
 * @todo Préciser l’interlignage sur le body pour l’écran large
@@ -12,7 +15,7 @@ html {
 }
 
 body {
-  font-family: $fonteSecondaire;
+  font-family: variables.$fonteSecondaire;
   font-size: 16px; /* 16px pour toutes les largeurs d'écran */
   font-size: 1.6rem;
   line-height: 1.375; /* facteur multiplicateur de la taille de la police 1.375x16=22 */
@@ -26,13 +29,13 @@ h2,
 .titreNiveau2,
 h3,
 .titreNiveau3 {
-  font-family: $fontePrimaire;
+  font-family: variables.$fontePrimaire;
   font-weight: 500;
 }
 
 h1,
 .titreNiveau1 {
-  @include fontSize(28px);
+  @include mixins.fontSize(28px);
   margin: 0;
   &--desktop {
     font-size: 48px;
@@ -40,7 +43,7 @@ h1,
     padding-bottom: 15px;
     position: relative;
     &:after {
-      background-color: $bleuMoyen;
+      background-color: variables.$bleuMoyen;
       content: "";
       display: inline-block;
       width: 150px;
@@ -74,7 +77,7 @@ h3,
 }
 
 .texte {
-  font-family: $fonteSecondaire;
+  font-family: variables.$fonteSecondaire;
   font-size: 16px;
   font-size: 1.6rem;
   line-height: 1.375;
