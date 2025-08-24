@@ -1,0 +1,24 @@
+{
+  "name": "rpni3-tp1-formulaire",
+  "version": "1.0.0",
+  "description": "<!--  Ce fichier README.md est une documentation de base permettant de vous orienter dans la configuration idéale de votre projet.",
+  "homepage": "https://github.com/dlapointegilbert/RPNI3-TP1-formulaire#readme",
+  "bugs": {
+    "url": "https://github.com/dlapointegilbert/RPNI3-TP1-formulaire/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dlapointegilbert/RPNI3-TP1-formulaire.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass --watch src/scss:public/css",
+    "build": "sass src/scss:dist/css --style=expanded --source-map"
+  },
+  "devDependencies": {
+    "normalize.scss": "^0.1.0"
+  }
+}
